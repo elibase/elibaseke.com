@@ -7,21 +7,15 @@
     background-color: #211f1f; 
 }
 
-li, a {
-    font-family: "Montserrat";
-    font-weight: 500;
-    font-size: 16px;
-    color: beige;
-}
-
-button {
+li, a, button {
     font-family: "Montserrat";
     font-weight: 500;
     font-size: 16px;
     color: white;
+    text-decoration: none;
 }
 
-header {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,27 +28,33 @@ header {
 
 .nav_links li {
  display: inline-block;
- padding: 0px 20px;   
+ padding: 0px 5px;   
 }
 
-.nav__links li a {
+.nav_links li a {
     transition: all 0.3s ease 0s;
 }
 
-.nav__links li a:hover{
+.nav_links li a:hover{
     color: #0088a9;
+}
+
+.nav_links {
+    text-decoration: none;
 }
 
 button {
     padding: 9px 25px;
     background-color: rgba(0, 136, 169, 1);
     border: none;
-    border-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 15px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
 
 button:hover {
-    background-color: rgba(0, 136, 169, 0.7);
-
+    background-color: rgba(0, 136, 169, 0.6);
 }
